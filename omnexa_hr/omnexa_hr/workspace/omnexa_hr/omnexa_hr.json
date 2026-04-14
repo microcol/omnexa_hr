@@ -1,0 +1,29 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"omx-hr-h1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>HR</b></span>\",\"col\":12}},{\"id\":\"omx-hr-c1\",\"type\":\"card\",\"data\":{\"card_name\":\"People\",\"col\":4}},{\"id\":\"omx-hr-c2\",\"type\":\"card\",\"data\":{\"card_name\":\"Policies\",\"col\":4}}]",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "is_hidden": 0,
+ "label": "HR",
+ "links": [
+  {"hidden": 0, "is_query_report": 0, "label": "People", "link_count": 0, "onboard": 0, "type": "Card Break"},
+  {"hidden": 0, "is_query_report": 0, "label": "Employee", "link_count": 0, "link_to": "Employee", "link_type": "DocType", "onboard": 0, "type": "Link"},
+  {"hidden": 0, "is_query_report": 0, "label": "Policies", "link_count": 0, "onboard": 0, "type": "Card Break"},
+  {"hidden": 0, "is_query_report": 0, "label": "Leave Policy", "link_count": 0, "link_to": "Leave Policy", "link_type": "DocType", "onboard": 0, "type": "Link"}
+ ],
+ "modified": "2026-04-15 02:15:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Hr",
+ "name": "HR",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 8.0,
+ "shortcuts": [],
+ "title": "HR"
+}
