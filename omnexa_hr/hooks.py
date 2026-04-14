@@ -137,13 +137,32 @@ required_apps = ["omnexa_core"]
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"HR Attendance": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_hr.permissions.enforce_branch_access_for_doc",
+	},
+	"HR Payroll Entry": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_hr.permissions.enforce_branch_access_for_doc",
+	},
+	"HR Recruitment Request": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+	},
+	"HR Interview": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+	},
+	"HR Training Record": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+	},
+	"HR Leave Type": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+	},
+	"HR Leave Application": {
+		"before_validate": "omnexa_hr.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_hr.permissions.enforce_branch_access_for_doc",
+	},
+}
 
 # Scheduled Tasks
 # ---------------

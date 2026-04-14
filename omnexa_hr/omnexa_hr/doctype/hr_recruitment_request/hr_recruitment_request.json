@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-14 23:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "department",
+  "designation",
+  "open_positions",
+  "request_date",
+  "status",
+  "justification"
+ ],
+ "fields": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1},
+  {"fieldname": "department", "fieldtype": "Data", "label": "Department", "reqd": 1},
+  {"fieldname": "designation", "fieldtype": "Data", "label": "Designation", "reqd": 1},
+  {"fieldname": "open_positions", "fieldtype": "Int", "label": "Open Positions", "default": "1"},
+  {"fieldname": "request_date", "fieldtype": "Date", "label": "Request Date", "reqd": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nOpen\nIn Progress\nClosed", "default": "Draft"},
+  {"fieldname": "justification", "fieldtype": "Small Text", "label": "Justification"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-14 23:30:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Hr",
+ "name": "HR Recruitment Request",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Accounts Manager", "read": 1, "write": 1, "create": 1, "report": 1},
+  {"role": "Accounts User", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

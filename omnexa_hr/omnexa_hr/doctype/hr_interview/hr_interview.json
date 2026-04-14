@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-14 23:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "recruitment_request",
+  "candidate_name",
+  "interviewer",
+  "interview_date",
+  "score",
+  "recommendation",
+  "status",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "recruitment_request", "fieldtype": "Link", "label": "Recruitment Request", "options": "HR Recruitment Request"},
+  {"fieldname": "candidate_name", "fieldtype": "Data", "label": "Candidate Name", "reqd": 1},
+  {"fieldname": "interviewer", "fieldtype": "Data", "label": "Interviewer"},
+  {"fieldname": "interview_date", "fieldtype": "Datetime", "label": "Interview Date", "reqd": 1},
+  {"fieldname": "score", "fieldtype": "Percent", "label": "Score"},
+  {"fieldname": "recommendation", "fieldtype": "Select", "label": "Recommendation", "options": "Hire\nHold\nReject"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Scheduled\nCompleted\nCancelled", "default": "Scheduled"},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-14 23:30:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Hr",
+ "name": "HR Interview",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Accounts Manager", "read": 1, "write": 1, "create": 1, "report": 1},
+  {"role": "Accounts User", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

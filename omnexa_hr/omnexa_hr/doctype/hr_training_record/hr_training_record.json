@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-14 23:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "company",
+  "training_title",
+  "provider",
+  "start_date",
+  "end_date",
+  "cost",
+  "certificate_url",
+  "status"
+ ],
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "Employee", "reqd": 1},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1},
+  {"fieldname": "training_title", "fieldtype": "Data", "label": "Training Title", "reqd": 1},
+  {"fieldname": "provider", "fieldtype": "Data", "label": "Provider"},
+  {"fieldname": "start_date", "fieldtype": "Date", "label": "Start Date"},
+  {"fieldname": "end_date", "fieldtype": "Date", "label": "End Date"},
+  {"fieldname": "cost", "fieldtype": "Currency", "label": "Cost"},
+  {"fieldname": "certificate_url", "fieldtype": "Data", "label": "Certificate URL"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nIn Progress\nCompleted\nCancelled", "default": "Planned"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-14 23:30:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Hr",
+ "name": "HR Training Record",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Accounts Manager", "read": 1, "write": 1, "create": 1, "report": 1},
+  {"role": "Accounts User", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

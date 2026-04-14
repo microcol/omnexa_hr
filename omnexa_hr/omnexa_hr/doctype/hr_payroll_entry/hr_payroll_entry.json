@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-04-14 23:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "company",
+  "payroll_month",
+  "basic_salary",
+  "allowances",
+  "deductions",
+  "bonus",
+  "net_pay",
+  "status"
+ ],
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "Employee", "reqd": 1},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1},
+  {"fieldname": "payroll_month", "fieldtype": "Date", "label": "Payroll Month", "reqd": 1},
+  {"fieldname": "basic_salary", "fieldtype": "Currency", "label": "Basic Salary", "reqd": 1},
+  {"fieldname": "allowances", "fieldtype": "Currency", "label": "Allowances"},
+  {"fieldname": "deductions", "fieldtype": "Currency", "label": "Deductions"},
+  {"fieldname": "bonus", "fieldtype": "Currency", "label": "Bonus"},
+  {"fieldname": "net_pay", "fieldtype": "Currency", "label": "Net Pay", "read_only": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nApproved\nPaid", "default": "Draft"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-14 23:30:00",
+ "modified_by": "Administrator",
+ "module": "Omnexa Hr",
+ "name": "HR Payroll Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Accounts Manager", "read": 1, "write": 1, "create": 1, "report": 1},
+  {"role": "Accounts User", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
